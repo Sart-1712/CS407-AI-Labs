@@ -1,0 +1,45 @@
+You are helping me with a university AI lab: "Search and A*, Warehouse Robot".
+Answer in the structured format below. Do not skip sections.
+
+PROBLEM
+A robot moves on an ASCII grid map: # = obstacle, . = free, S = start, G = goal.
+Moves: Up, Down, Left, Right. Each move costs 1.
+
+MAP
+#################
+#S....#.........#
+#.###.#.#######.#
+#...#.#.......#.#
+###.#.#######.#.#
+#...#.........#.#
+#.###########.#.#
+#.............#G#
+#################
+
+STEP 1 - Formulation (table): state, actions, transition, initial state, goal, cost.
+  Then answer: what defines a state? what makes an action invalid? is it deterministic? what is a solution?
+
+STEP 2 - Python code (simple, commented, no external libraries):
+  - states are (row, col) tuples; parse the map from a string
+  - A* with a heapq frontier, Manhattan heuristic, closed set, parent pointers
+  - break ties on f using smaller h
+  - BFS version for comparison
+  - report: found?, path, path length, number of states expanded
+  - heuristic as a function argument
+
+STEP 3 - Tests (with asserts): original map; trivial map (#SG##); unreachable goal
+  (must not loop forever); map with two paths (A* length must equal BFS length).
+
+STEP 4 - Code map: table of where state, action, transition, goal test, g, h, f,
+  frontier, visited set and path reconstruction appear in the code.
+
+STEP 5 - Comparison table BFS vs A*: found, path length, states expanded.
+  Explain why A* may or may not expand fewer states on THIS map.
+
+STEP 6 - Heuristics: compare h=0, Manhattan, Euclidean, 2*Manhattan on this map AND
+  on an open room map. For each give found, length, expanded, optimal?.
+  Explain admissibility and which heuristic breaks it.
+
+STEP 7 - Self-check: list possible bugs in your own code and how my tests would catch them.
+
+RULES: show real outputs, not guesses. Keep explanations short and plain.
