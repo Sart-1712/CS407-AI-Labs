@@ -1,0 +1,204 @@
+{
+ "source": "ChatGPT and Claude web apps",
+ "models": {
+  "ChatGPT": "GPT 5.6 Sol",
+  "Claude": "Sonnet 5.5"
+ },
+ "responses": [
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "lab_newton",
+   "category": "lab prompt (LangChain template)",
+   "prompt": "Question: Who is Sir Issac Newton\n\nAnswer: Let's think step by step.",
+   "response": "Sir Isaac Newton (1643–1727) was an English mathematician, physicist, and astronomer, widely regarded as one of the most influential scientists in history.\nHe is best known for:\n- Formulating the three laws of motion\n- Developing the law of universal gravitation\n- Making major contributions to calculus\n- Studying optics, including showing that white light is made of different colors\n- Writing Principia Mathematica, one of the most important works in physics\nIn simple terms, Newton helped establish the mathematical laws that explain how objects move and how gravity works."
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "lab_newton",
+   "category": "lab prompt (LangChain template)",
+   "prompt": "Question: Who is Sir Issac Newton\n\nAnswer: Let's think step by step.",
+   "response": "Sir Isaac Newton (1643-1727) was an English mathematician, physicist, astronomer, and natural philosopher, widely regarded as one of the most influential scientists in history. (Note the spelling: \"Isaac,\" not \"Issac.\")\n\nStep 1: Who he was\nNewton was born in Woolsthorpe, Lincolnshire, England, and studied at Trinity College, Cambridge. He later became Lucasian Professor of Mathematics at Cambridge, served as Warden and then Master of the Royal Mint, and was president of the Royal Society. He was knighted by Queen Anne in 1705.\n\nStep 2: His major contributions\n\nLaws of motion: He formulated the three laws describing how forces affect the movement of objects, forming the foundation of classical mechanics.\nUniversal gravitation: He proposed that the same force pulling an apple to the ground also keeps the Moon in orbit around Earth and the planets around the Sun.\nCalculus: He developed calculus (which he called \"fluxions\"), independently of the German mathematician Gottfried Leibniz. The two later became embroiled in a priority dispute.\nOptics: He showed that white light is composed of a spectrum of colors, and he built the first practical reflecting telescope.\n\nStep 3: His most important work\nHis 1687 book, Philosophiæ Naturalis Principia Mathematica (commonly called the Principia), laid out his laws of motion and gravitation. It is considered one of the most important scientific works ever published.\n\nStep 4: His legacy\nNewton's work defined physics for over two centuries, until Einstein's relativity and quantum mechanics refined our understanding at extreme scales. He also had strong interests in alchemy, theology, and biblical chronology. He is buried in Westminster Abbey.\n\nAnswer: Sir Isaac Newton was an English scientist and mathematician who formulated the laws of motion and universal gravitation, co-invented calculus, and made foundational discoveries in optics, shaping the course of modern science."
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "fact_capital",
+   "category": "factual recall",
+   "prompt": "What is the capital of Australia? Answer in one word.",
+   "response": "Canberra"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "fact_capital",
+   "category": "factual recall",
+   "prompt": "What is the capital of Australia? Answer in one word.",
+   "response": "Canberra"
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "fact_transformer_paper",
+   "category": "factual recall",
+   "prompt": "Which paper introduced the Transformer architecture, and in which year was it published? Give the title and the year only.",
+   "response": "Attention Is All You Need — 2017"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "fact_transformer_paper",
+   "category": "factual recall",
+   "prompt": "Which paper introduced the Transformer architecture, and in which year was it published? Give the title and the year only.",
+   "response": "\"Attention Is All You Need\" (2017)"
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "reason_bat_ball",
+   "category": "reasoning trap",
+   "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Give the final answer on the last line.",
+   "response": "Let the ball cost \\(x\\).\nThen the bat costs \\(x + \\$1.00\\).\nSo:\n\\[\nx + (x+1.00)=1.10\n\\]\\[\n2x=0.10\n\\]\\[\nx=0.05\n\\]$0.05"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "reason_bat_ball",
+   "category": "reasoning trap",
+   "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Give the final answer on the last line.",
+   "response": "Let the ball cost x. Then the bat costs x + 1.00, and together they cost 1.10:\n\nx + (x + 1.00) = 1.10\n2x + 1.00 = 1.10\n2x = 0.10\nx = 0.05\n\nCheck: the ball is $0.05, the bat is $1.05 (exactly $1.00 more), and together that's $1.10.\n\n$0.05 (5 cents)"
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "math_multiply",
+   "category": "arithmetic",
+   "prompt": "What is 347 multiplied by 29? Give only the number.",
+   "response": "10063"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "math_multiply",
+   "category": "arithmetic",
+   "prompt": "What is 347 multiplied by 29? Give only the number.",
+   "response": "10063"
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "math_word",
+   "category": "multi-step arithmetic",
+   "prompt": "A warehouse robot moves 3 packages per minute for 45 minutes, then 5 packages per minute for the next 30 minutes. How many packages does it move in total? Give the final answer on the last line.",
+   "response": "For the first 45 minutes:\n3 × 45 = 135 packages.\nFor the next 30 minutes:\n5 × 30 = 150 packages.\nTotal: 135 + 150 = 285 packages.\n285 packages"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "math_word",
+   "category": "multi-step arithmetic",
+   "prompt": "A warehouse robot moves 3 packages per minute for 45 minutes, then 5 packages per minute for the next 30 minutes. How many packages does it move in total? Give the final answer on the last line.",
+   "response": "First phase: 3 packages/min × 45 min = 135 packages.\n\nSecond phase: 5 packages/min × 30 min = 150 packages.\n\nTotal: 135 + 150 = 285\n\n285"
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "code_prime",
+   "category": "code generation",
+   "prompt": "Write a Python function is_prime(n) that returns True if n is a prime number and False otherwise. It must handle n < 2 correctly. Return only the code.",
+   "response": "def is_prime(n):\n    if n < 2:\n        return False\n    if n == 2:\n        return True\n    if n % 2 == 0:\n        return False\n    i = 3\n    while i * i <= n:\n        if n % i == 0:\n            return False\n        i += 2\n    return True"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "code_prime",
+   "category": "code generation",
+   "prompt": "Write a Python function is_prime(n) that returns True if n is a prime number and False otherwise. It must handle n < 2 correctly. Return only the code.",
+   "response": "def is_prime(n):\n    if n < 2:\n        return False\n    if n < 4:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True"
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "instruction_format",
+   "category": "instruction following",
+   "prompt": "List exactly three uses of encoder-only Transformer models. Use exactly three bullet points, each under 10 words, and write nothing else.",
+   "response": "Text classification and sentiment analysis\nNamed entity recognition\nSemantic search and retrieval",
+   "note": "bullet markers not present in the pasted text (likely removed when copying)"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "instruction_format",
+   "category": "instruction following",
+   "prompt": "List exactly three uses of encoder-only Transformer models. Use exactly three bullet points, each under 10 words, and write nothing else.",
+   "response": "Text classification, such as sentiment analysis\nNamed entity recognition in text\nSemantic search and sentence embeddings",
+   "note": "bullet markers not present in the pasted text (likely removed when copying)"
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "concept_self_attention",
+   "category": "explanation (lab topic)",
+   "prompt": "In two sentences, explain what self-attention computes in a Transformer.",
+   "response": "Self-attention computes how strongly each token should attend to every other token by comparing their query and key representations. It uses these attention weights to form a weighted combination of value representations, producing a context-aware representation for each token."
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "concept_self_attention",
+   "category": "explanation (lab topic)",
+   "prompt": "In two sentences, explain what self-attention computes in a Transformer.",
+   "response": "Self-attention computes, for each token in a sequence, a weighted average of value vectors from all tokens, where the weights come from scaled dot-product similarity between that token's query vector and every token's key vector (passed through a softmax). The result is a new representation of each token that blends in information from the other tokens most relevant to it, letting the model capture dependencies regardless of distance in the sequence."
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "hallucination_probe",
+   "category": "hallucination probe",
+   "prompt": "Summarise the main result of the 2019 paper 'Recursive Warehouse Transformers for Quantum Package Routing' by Elena Marchetti.",
+   "response": "I can’t find evidence that a 2019 paper titled “Recursive Warehouse Transformers for Quantum Package Routing” by Elena Marchetti exists. Searches for the exact title, author/title combination, and key phrases returned no matching scholarly paper; the results were unrelated works on warehouse routing and recursive transformers. ResearchGate\nSo I don’t want to invent a “main result.” If you have a DOI, arXiv link, journal/conference name, or a PDF of the paper, send it and I can summarise the actual result.",
+   "note": "response cites search results (ResearchGate), so web search appears to have been used for this prompt"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "hallucination_probe",
+   "category": "hallucination probe",
+   "prompt": "Summarise the main result of the 2019 paper 'Recursive Warehouse Transformers for Quantum Package Routing' by Elena Marchetti.",
+   "response": "I don't recognize this paper, and I can't verify that it exists. \"Recursive Warehouse Transformers for Quantum Package Routing\" by Elena Marchetti (2019) doesn't match anything I know of, and the title combines several buzzwords (recursive transformers, quantum routing, warehouse logistics) in a way that makes me suspect it may not be a real publication. If I summarized a \"main result,\" I'd be inventing one.\n\nA few possibilities:\n\nThe title or author is slightly off. If you remember it from a citation, a slide, or a reading list, the details may have been garbled.\nIt's obscure or not indexed well. A small workshop paper or preprint could exist that I simply don't know about.\nIt's fabricated or AI-generated. Made-up citations like this are a known issue with LLM output, so if the reference came from a chatbot, it's worth double-checking.\n\nIf you'd like, I can search the web to see whether it turns up anywhere. Or if you're interested in the underlying topics, I can summarize real work on transformers for combinatorial optimization or routing problems, quantum annealing approaches to vehicle routing, or warehouse order-picking optimization."
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "translation_fr",
+   "category": "translation (compare with T5)",
+   "prompt": "Translate into French: \"I love machine learning.\" Give only the translation.",
+   "response": "J’adore l’apprentissage automatique."
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "translation_fr",
+   "category": "translation (compare with T5)",
+   "prompt": "Translate into French: \"I love machine learning.\" Give only the translation.",
+   "response": "J'adore l'apprentissage automatique."
+  },
+  {
+   "model": "GPT 5.6 Sol",
+   "app": "ChatGPT",
+   "id": "sentiment_sarcasm",
+   "category": "classification (compare with DistilBERT)",
+   "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, answering with one word: \"Oh great, another Monday. I just love being stuck in traffic for two hours.\"",
+   "response": "NEGATIVE"
+  },
+  {
+   "model": "Sonnet 5.5",
+   "app": "Claude",
+   "id": "sentiment_sarcasm",
+   "category": "classification (compare with DistilBERT)",
+   "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, answering with one word: \"Oh great, another Monday. I just love being stuck in traffic for two hours.\"",
+   "response": "NEGATIVE"
+  }
+ ]
+}

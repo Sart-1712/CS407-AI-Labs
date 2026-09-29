@@ -1,0 +1,175 @@
+{
+ "environment": {
+  "python": "3.11.11",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "processor": "arm",
+  "ollama_server": "0.17.5",
+  "options": {
+   "temperature": 0,
+   "seed": 42,
+   "num_predict": 1024
+  }
+ },
+ "responses": [
+  {
+   "model": "mistral",
+   "id": "lab_newton",
+   "category": "lab prompt (LangChain template)",
+   "prompt": "Question: Who is Sir Issac Newton\n\nAnswer: Let's think step by step.",
+   "response": " Sir Isaac Newton was an English mathematician, physicist, and scientist who is widely recognized as one of the most influential scientists in history. He was born on January 4, 1643, and died on March 31, 1727.\n\nNewton is best known for his work in the fields of mathematics and physics. He made significant contributions to the understanding of gravity, optics, and calculus. His most famous work is \"Philosophiæ Naturalis Principia\" (Mathematical Principles of Natural Philosophy), published in 1687, which laid the groundwork for classical mechanics.\n\nIn this work, Newton formulated the three laws of motion, which describe the relationship between a body and the forces acting upon it, and he formulated the law of universal gravitation, which describes the gravitational force between two bodies.\n\nNewton's work in optics, including his discovery of the composition of white light and the invention of the reflecting telescope, also had a profound impact on science.\n\nIn addition to his scientific work, Newton was also a fellow of the Royal Society and served as the president of the society from 1705 to 1727. He was knighted by Queen Anne in 1705, and he is buried in Westminster Abbey.\n\nOverall, Sir Isaac Newton is considered one of the greatest scientists in history, and his work has had a lasting impact on the development of science and technology.",
+   "wall_seconds": 38.02,
+   "load_seconds": 11.36,
+   "prompt_tokens": 25,
+   "generated_tokens": 327,
+   "tokens_per_second": 12.99
+  },
+  {
+   "model": "mistral",
+   "id": "fact_capital",
+   "category": "factual recall",
+   "prompt": "What is the capital of Australia? Answer in one word.",
+   "response": " Canberra",
+   "wall_seconds": 0.57,
+   "load_seconds": 0.04,
+   "prompt_tokens": 16,
+   "generated_tokens": 4,
+   "tokens_per_second": 17.61
+  },
+  {
+   "model": "mistral",
+   "id": "fact_transformer_paper",
+   "category": "factual recall",
+   "prompt": "Which paper introduced the Transformer architecture, and in which year was it published? Give the title and the year only.",
+   "response": " The Transformer architecture was introduced in the paper titled \"Attention is All You Need\" published in the year 2017.",
+   "wall_seconds": 2.43,
+   "load_seconds": 0.04,
+   "prompt_tokens": 28,
+   "generated_tokens": 29,
+   "tokens_per_second": 13.82
+  },
+  {
+   "model": "mistral",
+   "id": "reason_bat_ball",
+   "category": "reasoning trap",
+   "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Give the final answer on the last line.",
+   "response": " Let's break this down:\n\n1. The bat costs $1.00 more than the ball, so if we denote the cost of the ball as 'b', the cost of the bat would be 'b + $1.00'.\n\n2. The total cost of both the bat and the ball is $1.10. So, we can set up the following equation:\n\n   b (ball cost) + (b + $1.00) (bat cost) = $1.10\n\n3. Simplifying the equation, we get:\n\n   b + b + $1.00 = $1.10\n\n4. Combining like terms, we have:\n\n   2b + $1.00 = $1.10\n\n5. Subtracting $1.00 from both sides, we get:\n\n   2b = $0.10\n\n6. Finally, dividing both sides by 2, we find the cost of the ball:\n\n   b = $0.05\n\nSo, the ball costs $0.05.",
+   "wall_seconds": 19.13,
+   "load_seconds": 0.04,
+   "prompt_tokens": 47,
+   "generated_tokens": 248,
+   "tokens_per_second": 13.41
+  },
+  {
+   "model": "mistral",
+   "id": "math_multiply",
+   "category": "arithmetic",
+   "prompt": "What is 347 multiplied by 29? Give only the number.",
+   "response": " The result of multiplying 347 by 29 is 10189.",
+   "wall_seconds": 1.92,
+   "load_seconds": 0.04,
+   "prompt_tokens": 22,
+   "generated_tokens": 22,
+   "tokens_per_second": 14.11
+  },
+  {
+   "model": "mistral",
+   "id": "math_word",
+   "category": "multi-step arithmetic",
+   "prompt": "A warehouse robot moves 3 packages per minute for 45 minutes, then 5 packages per minute for the next 30 minutes. How many packages does it move in total? Give the final answer on the last line.",
+   "response": " First, let's calculate the number of packages moved during each time period.\n\nFor the first 45 minutes, the robot moves 3 packages per minute, so it moves a total of:\n\nPackages_moved_in_45_minutes = Packages per minute * Minutes\n                                            = 3 * 45\n                                            = 135 packages\n\nFor the next 30 minutes, the robot moves 5 packages per minute, so it moves a total of:\n\nPackages_moved_in_30_minutes = Packages per minute * Minutes\n                                            = 5 * 30\n                                            = 150 packages\n\nNow, let's add the number of packages moved during both time periods to find the total number of packages moved:\n\nTotal_packages_moved = Packages_moved_in_45_minutes + Packages_moved_in_30_minutes\n                                 = 135 + 150\n                                 = 285 packages\n\nSo, the warehouse robot moves a total of 285 packages.",
+   "wall_seconds": 19.93,
+   "load_seconds": 0.04,
+   "prompt_tokens": 51,
+   "generated_tokens": 258,
+   "tokens_per_second": 13.43
+  },
+  {
+   "model": "mistral",
+   "id": "code_prime",
+   "category": "code generation",
+   "prompt": "Write a Python function is_prime(n) that returns True if n is a prime number and False otherwise. It must handle n < 2 correctly. Return only the code.",
+   "response": " Here is a Python function that checks if a number is prime:\n\n```python\ndef is_prime(n):\n    if n <= 1:\n        return False\n    elif n <= 3:\n        return True\n    elif n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n```\n\nThis function first checks if the number is less than or equal to 1, in which case it returns False. Then it checks for the special cases of 2 and 3, which are prime numbers. After that, it checks if the number is divisible by 2 or 3. If it is, the number is not prime.\n\nFinally, it checks for divisibility by all numbers of the form 6k ± 1, up to the square root of the number. This is an optimization that reduces the number of checks needed, as these are the only divisors a prime number can have (other than 1 and itself). If the number is divisible by any of these, it is not prime. If it passes all these checks, it is a prime number.",
+   "wall_seconds": 22.88,
+   "load_seconds": 0.04,
+   "prompt_tokens": 41,
+   "generated_tokens": 293,
+   "tokens_per_second": 13.17
+  },
+  {
+   "model": "mistral",
+   "id": "instruction_format",
+   "category": "instruction following",
+   "prompt": "List exactly three uses of encoder-only Transformer models. Use exactly three bullet points, each under 10 words, and write nothing else.",
+   "response": " - Speech recognition: Encoder-only Transformers convert speech signals into text.\n\n- Machine translation: They translate text from one language to another.\n\n- Text summarization: Encoder-only Transformers condense long texts into shorter summaries.",
+   "wall_seconds": 4.59,
+   "load_seconds": 0.04,
+   "prompt_tokens": 35,
+   "generated_tokens": 57,
+   "tokens_per_second": 13.66
+  },
+  {
+   "model": "mistral",
+   "id": "concept_self_attention",
+   "category": "explanation (lab topic)",
+   "prompt": "In two sentences, explain what self-attention computes in a Transformer.",
+   "response": " Self-attention in a Transformer computes the weighted sum of values from different positions in a sequence, where the weights are determined by the similarity of the words at those positions, allowing the model to focus on relevant information while ignoring irrelevant details. This process is repeated multiple times to capture long-range dependencies and complex relationships within the sequence.",
+   "wall_seconds": 5.64,
+   "load_seconds": 0.04,
+   "prompt_tokens": 21,
+   "generated_tokens": 72,
+   "tokens_per_second": 13.67
+  },
+  {
+   "model": "mistral",
+   "id": "hallucination_probe",
+   "category": "hallucination probe",
+   "prompt": "Summarise the main result of the 2019 paper 'Recursive Warehouse Transformers for Quantum Package Routing' by Elena Marchetti.",
+   "response": " The 2019 paper 'Recursive Warehouse Transformers for Quantum Package Routing' by Elena Marchetti presents a novel approach to quantum computing for optimizing package routing in warehouses. The main result of the paper is the development of Recursive Warehouse Transformers (RWT), a quantum algorithm that can efficiently solve the problem of finding the shortest path for multiple packages in a warehouse with dynamic demand.\n\nRWT is designed to handle the complexity of warehouse routing problems by using a recursive approach, breaking down the problem into smaller sub-problems and solving them simultaneously. The algorithm utilizes the principles of quantum computing, specifically the use of quantum gates and the quantum state superposition, to significantly reduce the computational time required to find the optimal solution compared to classical algorithms.\n\nThe paper demonstrates that RWT outperforms classical algorithms in terms of computational efficiency, especially for large-scale warehouse routing problems with a high number of packages and warehouse locations. The authors also discuss potential applications of RWT in other fields, such as traffic optimization and protein folding, where similar complex routing problems occur.\n\nIn summary, the main result of the paper is the development of Recursive Warehouse Transformers, a quantum algorithm that can efficiently solve complex warehouse routing problems, offering significant improvements in computational efficiency compared to classical algorithms.",
+   "wall_seconds": 23.81,
+   "load_seconds": 0.04,
+   "prompt_tokens": 42,
+   "generated_tokens": 296,
+   "tokens_per_second": 12.77
+  },
+  {
+   "model": "mistral",
+   "id": "translation_fr",
+   "category": "translation (compare with T5)",
+   "prompt": "Translate into French: \"I love machine learning.\" Give only the translation.",
+   "response": " J'aime l'apprentissage automatique.",
+   "wall_seconds": 1.37,
+   "load_seconds": 0.03,
+   "prompt_tokens": 20,
+   "generated_tokens": 14,
+   "tokens_per_second": 13.71
+  },
+  {
+   "model": "mistral",
+   "id": "sentiment_sarcasm",
+   "category": "classification (compare with DistilBERT)",
+   "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, answering with one word: \"Oh great, another Monday. I just love being stuck in traffic for two hours.\"",
+   "response": " NEGATIVE",
+   "wall_seconds": 0.92,
+   "load_seconds": 0.03,
+   "prompt_tokens": 45,
+   "generated_tokens": 5,
+   "tokens_per_second": 13.85
+  }
+ ],
+ "lab_chain": [
+  {
+   "model": "mistral",
+   "question": "Who is Sir Issac Newton",
+   "response": " Sir Isaac Newton was an English physicist and mathematician who is widely recognized as one of the most influential scientists of all time. He was born on January 4, 1643, and died on March 31, 1727. Newton is famous for his work on the laws of motion and universal gravitation, which he published in his book \"Philosophiæ Naturalis Principia\" (or \"Mathematical Principles of Natural Philosophy\"). His three laws of motion, which describe the relationship between a body and the forces acting upon it, are fundamental to classical mechanics. In addition, Newton made significant contributions to optics, and he is also known for his discovery of the spectrum of white light, and for developing the reflecting telescope.",
+   "seconds": 14.8,
+   "note": "LangChain default options (not temperature 0)"
+  }
+ ],
+ "models": {
+  "mistral": {
+   "family": "llama",
+   "parameter_size": "7.2B",
+   "quantization": "Q4_K_M"
+  }
+ }
+}

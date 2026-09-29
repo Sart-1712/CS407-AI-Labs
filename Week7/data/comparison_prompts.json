@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lab_newton",
+    "category": "lab prompt (LangChain template)",
+    "prompt": "Question: Who is Sir Issac Newton\n\nAnswer: Let's think step by step.",
+    "reference": "English mathematician and physicist (1643-1727): laws of motion, universal gravitation, calculus (with Leibniz), optics, Principia (1687). Should not be derailed by the misspelling 'Issac'."
+  },
+  {
+    "id": "fact_capital",
+    "category": "factual recall",
+    "prompt": "What is the capital of Australia? Answer in one word.",
+    "reference": "Canberra"
+  },
+  {
+    "id": "fact_transformer_paper",
+    "category": "factual recall",
+    "prompt": "Which paper introduced the Transformer architecture, and in which year was it published? Give the title and the year only.",
+    "reference": "\"Attention Is All You Need\" (Vaswani et al.), 2017"
+  },
+  {
+    "id": "reason_bat_ball",
+    "category": "reasoning trap",
+    "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Give the final answer on the last line.",
+    "reference": "$0.05 (5 cents). The intuitive wrong answer is $0.10."
+  },
+  {
+    "id": "math_multiply",
+    "category": "arithmetic",
+    "prompt": "What is 347 multiplied by 29? Give only the number.",
+    "reference": "10063"
+  },
+  {
+    "id": "math_word",
+    "category": "multi-step arithmetic",
+    "prompt": "A warehouse robot moves 3 packages per minute for 45 minutes, then 5 packages per minute for the next 30 minutes. How many packages does it move in total? Give the final answer on the last line.",
+    "reference": "285 (135 + 150)"
+  },
+  {
+    "id": "code_prime",
+    "category": "code generation",
+    "prompt": "Write a Python function is_prime(n) that returns True if n is a prime number and False otherwise. It must handle n < 2 correctly. Return only the code.",
+    "reference": "Correct for n < 2 (False), 2 (True), even numbers, squares of primes (e.g. 9, 25, 49). Checked by executing the returned code against test cases."
+  },
+  {
+    "id": "instruction_format",
+    "category": "instruction following",
+    "prompt": "List exactly three uses of encoder-only Transformer models. Use exactly three bullet points, each under 10 words, and write nothing else.",
+    "reference": "Exactly 3 bullets, each < 10 words, no extra text. Plausible uses: semantic search, document retrieval, clustering, classification, named-entity recognition."
+  },
+  {
+    "id": "concept_self_attention",
+    "category": "explanation (lab topic)",
+    "prompt": "In two sentences, explain what self-attention computes in a Transformer.",
+    "reference": "Each token's representation becomes a weighted sum of value vectors of all tokens, with weights = softmax(QK^T / sqrt(d_k)) from query-key similarity. Two sentences."
+  },
+  {
+    "id": "hallucination_probe",
+    "category": "hallucination probe",
+    "prompt": "Summarise the main result of the 2019 paper 'Recursive Warehouse Transformers for Quantum Package Routing' by Elena Marchetti.",
+    "reference": "This paper does not exist (fictitious title and author). A good answer says it cannot find or verify it; a bad answer invents a summary."
+  },
+  {
+    "id": "translation_fr",
+    "category": "translation (compare with T5)",
+    "prompt": "Translate into French: \"I love machine learning.\" Give only the translation.",
+    "reference": "J'aime l'apprentissage automatique."
+  },
+  {
+    "id": "sentiment_sarcasm",
+    "category": "classification (compare with DistilBERT)",
+    "prompt": "Classify the sentiment of this review as POSITIVE or NEGATIVE, answering with one word: \"Oh great, another Monday. I just love being stuck in traffic for two hours.\"",
+    "reference": "NEGATIVE (sarcasm)"
+  }
+]
